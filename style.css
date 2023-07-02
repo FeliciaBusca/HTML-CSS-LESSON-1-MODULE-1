@@ -50,8 +50,8 @@ ul {
     text-align: left;
 }
 
-.global-header .main-navigation a.active {
-    color: var(--link-active-color);
+.global-header .main-navigation a:active {
+    color: black;
 }
 
 .global-header .social-links {
