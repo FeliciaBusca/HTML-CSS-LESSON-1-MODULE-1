@@ -5,7 +5,7 @@
     --link-active-color: #FF6C00;
     --heading-color: #fff;
 --accent-color: #2196F3;
-
+--section-background-color: #fff;
 }
 
 h1,
@@ -22,7 +22,7 @@ ul {
     list-style-type: none;
 }
 
-.button {
+button {
     color: var(--link-color);
     font-family: var(--text-font-family);
     font-size: 12px;
@@ -34,10 +34,50 @@ ul {
 
 }
 
-.global-header {
-    background-color: #333;
+.header-container {
+    display: flex;
 }
 
+.global-aside {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.global-aside-links {
+    display: flex;
+    flex-direction: column;
+}
+img.dash {
+    width: 1px;
+    height: 60px;
+}
+
+.header-container-content {
+    width: 100%;
+}
+.hero-section {
+    background-color: #333;
+    padding: 50px;
+}
+.hero-section .control-buttons {
+    margin-top: 142px;
+    display: flex;
+    justify-content: flex-end;
+}
+.global-header {
+    background-color: #333;
+    padding: 52px 100px 52px 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.global-header .main-navigation ul {
+    display: flex;
+    width: 450px;
+    justify-content: space-evenly;
+}
 .global-header .main-navigation,
 .global-header .main-navigation a:visited,
 .phone-number {
@@ -68,9 +108,10 @@ ul {
     color: var(--link-active-color);
 }
 
-.phone-number {
-    text-transform: uppercase;
+.global-header-aside {
+    background-color:var(--section-background-color);
 }
+
 
 .hero-heading {
     font-family: var(--heading-font-family);
@@ -82,9 +123,8 @@ ul {
     color: var(--heading-color);
 }
 
-.hero-section {
-    background-color: #333;
-}
+
+
 
 p {
     font-family: var(--text-font-family);
@@ -93,4 +133,28 @@ p {
     line-height: 26px;
     letter-spacing: 0.02em;
     text-align: left;
+}
+
+.section-light {
+    background-color:var(--section-background-color);
+}
+.section-light.about-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+.section-light.about-section img {
+    width: 270px;
+}
+
+.section-light .section-description {
+    width: 600px;
+}
+.section-dark {
+    background-color: #333;
+}
+
+.prices {
+    display: flex;
+    margin-top: 46px;
 }
